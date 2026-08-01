@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: #a2d2ff;
+    --accent-strong: #6fb5f5;
+    --accent-soft: #ecf5ff;
+    --accent-ink: #0e2a47;
+
+    --ink: #050505;
+    --ink-2: #282828;
+    --ink-3: #6b7280;
+    --ink-4: #9aa0a6;
+    --ink-5: #c8cdd2;
+
+    --bg: #ffffff;
+    --bg-2: #fafafa;
+    --surface: #fbfbfb;
+    --surface-2: #f6f7f8;
+
+    --border: rgba(0, 0, 0, 0.07);
+    --border-2: rgba(0, 0, 0, 0.12);
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.04);
+
+    --success: #047857;
+    --success-bg: #ecfdf5;
+    --error: #b3261e;
+    --error-bg: #fef2f2;
+    --warning: #92400e;
+    --warning-bg: #fffbeb;
+    --warning-ink: #d97706;
+
+    --radius: 10px;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .key-mono {
+    font-family: 'JetBrains Mono', Menlo, monospace;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+  }
+}

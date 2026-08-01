@@ -1,0 +1,5 @@
+/.env.local
+/CLAUDE.md
+/design-reference.html
+/dist
+/node_modules
